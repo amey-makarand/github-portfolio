@@ -7,7 +7,7 @@
   <link rel="shortcut icon" type="image/png" href="./images/a.png" />
 
     <title>
-      Amey Dhongade | Software Developer | Lifelong Learner & Explorer
+      Amey Dhongade
   </title>
 
   <meta name="description" content="Add small description of yourslef.">
@@ -16,6 +16,7 @@
 </head>
 
 
+<body>
   <!-- ***** Header ***** -->
 
   <header class="header" role="banner" id="top">
@@ -43,45 +44,21 @@
         </h1>
         <!-- Put a small paragraph about yourself -->
         <p> A Software Developer | Lifelong Learner & Explorer </p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <div class="header__cta">
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- <section class="sjsu-section">
-    <div class="row">
-      <img src="./images/group.jpeg" alt="Description of image" class="header__image">
-    </div>
-  </section> -->
-
-  <style>
-    .quote-box {
-      background-color: #f9f9f9;
-      border: 2px solid #f3f5cb;
-      padding: 20px;
-      width: 60%;
-      margin: 40px auto;
-      font-style: italic;
-      color: #333;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      border-radius: 8px;
-    }
-  
-    .quote-box p {
-      margin: 0;
-    }
-  </style>
-<div class="quote-box">
-  <p>
-    My Motto <br><br> 
-    "As a dedicated Software Engineer, I specialize in crafting innovative and scalable solutions that bridge the gap between complex technical challenges and user-centric design. With a strong foundation in software development and a passion for continuous learning, I excel in creating robust, high-performance systems that drive business growth. My expertise spans across full-stack development, cloud computing, and AI-driven applications, always with a focus on implementing best practices and delivering excellence. I thrive in collaborative environments, where my problem-solving skills and attention to detail contribute to the success of every project I undertake."
-  </p>
-</div>
-  
-<body>
-
   <main role="main">
+    <section class="quote-section">
+      <div class="quote-box">
+        <p>
+          "As a dedicated Software Engineer, I specialize in crafting innovative and scalable solutions that bridge the gap between complex technical challenges and user-centric design. With a strong foundation in software development and a passion for continuous learning, I excel in creating robust, high-performance systems that drive business growth. My expertise spans across full-stack development, cloud computing, and AI-driven applications, always with a focus on implementing best practices and delivering excellence. I thrive in collaborative environments, where my problem-solving skills and attention to detail contribute to the success of every project I undertake."
+        </p>
+      </div>
+    </section>
 
 
     <section class="workexp" id="workexp">
@@ -94,12 +71,12 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Amazon</h3>
-              <h4>Software Development Engineer Intern | May 2025 - Aug 2025</h4>
-              <p>
-                ▪ Automated DynamoDB to S3 Export : Designed and implemented an AWS EventBridge + Lambda + S3 solution to automate weekly DynamoDB table exports for WBR reporting, replacing manual processes and improving reliability and efficiency.
-                <br><br>▪ Device Lifecycle Tracker : Built a real-time data pipeline with SNS, SQS, Lambda, and internal tools to capture and analyze device field changes to enable reduction in developer debug time and provide historical analysis for device information. Developed Java-based AWS Lambda handlers for event processing with SQS integration, including batching, retry handling, and unit testing (JUnit, Mockito) to ensure reliability at scale.
-                <br><br>▪ AWS Infrastructure Automation : Deployed serverless stacks using AWS CDK (Infrastructure as Code) in TypeScript , with S3 encryption, IAM roles, and cross-service event triggers, streamlining deployments and enforcing security best practices.
-              </p>
+              <h4 class="work__meta">Software Development Engineer Intern | May 2025 - Aug 2025</h4>
+              <ul class="work__bullets">
+                <li>Automated weekly DynamoDB exports with EventBridge, Lambda, and S3, replacing manual WBR reporting workflows.</li>
+                <li>Built a device lifecycle tracker using SNS/SQS/Lambda with Java handlers, batching, retries, and JUnit/Mockito tests.</li>
+                <li>Provisioned secure serverless stacks in AWS CDK (TypeScript) with encryption, IAM roles, and event triggers.</li>
+              </ul>
             </div>
             <div class="work__image-box">
               <img src="./images/amazon-logo.png" class="work__image" alt="Amazon" />
@@ -109,13 +86,13 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Searce</h3>
-              <h4>Software Engineer | Jun 2022 - Apr 2024 </h2>
-              <p>
-                •	Developed 18 REST APIs using TypeScript: Integrated Google Pub/Sub, Winston logging, OpenTelemetry for observability, MongoDB, and Jest, while collaborating with a 15-member engineering team. This initiative enhanced system performance by 25%, significantly reducing error rates and latency.
-                <br><br>•	Led AWS to GCP Migration Project: Replaced 15 services with GCP alternatives using TypeScript and PostgreSQL, resulting in a 40% improvement in system efficiency, achieved through close collaboration with a team of 10 engineers.
-                <br><br>•	Automated Apigee Platform Deployment: Leveraged Google Cloud Build, triggered by GitHub commits for proxies, shared flows, KVMS, target servers, and API products. This proof of concept was successfully executed with a focused team of 3 engineers.
-                <br><br>•	Engineered Python-Based Microservices: Developed microservices using Flask, containerized and deployed on Google Cloud Run. Implemented Pytest for rigorous testing and utilized Apache Kafka for notification services, improving deployment efficiency by 30% in collaboration with an 8-member team.
-              </p>
+              <h4 class="work__meta">Software Engineer | Jun 2022 - Apr 2024</h4>
+              <ul class="work__bullets">
+                <li>Built 18 REST APIs in TypeScript with Pub/Sub, OpenTelemetry, Winston, MongoDB, and Jest; improved performance by 25%.</li>
+                <li>Led AWS-to-GCP migration for 15 services using TypeScript and PostgreSQL, improving system efficiency by 40%.</li>
+                <li>Automated Apigee deployments via Cloud Build with GitHub triggers for proxies, shared flows, KVMs, and API products.</li>
+                <li>Developed Flask microservices on Cloud Run with Pytest and Kafka-driven notifications, boosting deployment efficiency by 30%.</li>
+              </ul>
            
             </div>
             <div class="work__image-box">
@@ -126,10 +103,10 @@
           <div class="work__box">
             <div class="work__text">
               <h3>FINIQ</h3>
-              <h4>Intern | Jun 2021 - Jul 2021</h2>
-              <p>
-                •	Implemented SAML SSO in C#: Executed a proof of concept for SAML Single Sign-On, while also exploring options trading and geometric Brownian motion. This project was conducted in collaboration with a team of 6 engineers.
-              </p>
+              <h4 class="work__meta">Intern | Jun 2021 - Jul 2021</h4>
+              <ul class="work__bullets">
+                <li>Built a C# SAML SSO proof of concept and explored options pricing and geometric Brownian motion.</li>
+              </ul>
             </div>
             <div class="work__image-box">
               <img src="./images/finiq.jpg" class="work__image" alt="Project 1" />
@@ -139,10 +116,10 @@
           <div class="work__box">
             <div class="work__text">
               <h3>VidhyarthiMitra</h3>
-              <h4>Intern | May 2020 - Aug 2020</h2>
-              <p>
-                •	Automated Web Scraping for Educational Data in India: Leveraged Selenium and BeautifulSoup in Python to extract and store data in Excel. This automation improved data collection efficiency by 35%, working collaboratively with a team of 5 engineers.
-              </p>
+              <h4 class="work__meta">Intern | May 2020 - Aug 2020</h4>
+              <ul class="work__bullets">
+                <li>Automated education data collection with Selenium/BeautifulSoup to Excel, improving efficiency by 35%.</li>
+              </ul>
             </div>
             <div class="work__image-box">
               <img src="./images/vm.jpeg" class="work__image" alt="Project 3" />
@@ -162,7 +139,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>San Jose State University</h3>
-              <h4>Master in Science, Computer Science | Aug 2024 - Present </h2>
+              <h4 class="work__meta">Master in Science, Computer Science | Aug 2024 - Present</h4>
             </div>
             <div class="work__image-box">
               <img src="./images/sjsu.png" class="work__image" alt="Project 1" />
@@ -171,7 +148,7 @@
           <div class="work__box">
             <div class="work__text">
               <h3>College of Engineering Pune</h3>
-              <h4>Bachelor of Tehnology, Computer Science and Engineering | Aug 2018 - May 2022</h2>
+              <h4 class="work__meta">Bachelor of Tehnology, Computer Science and Engineering | Aug 2018 - May 2022</h4>
             </div>
             <div class="work__image-box">
               <img src="./images/coep.jpg" class="work__image" alt="Project 1" />
@@ -195,49 +172,27 @@
           <div class="work__box">
             <div class="work__text">
               <h3>Flood Damage Dection using Satellite Images</h3>
-              <p>
-                Developed Convolutional Neural Network (CNN) models using PyTorch, alongside a custom neural network model, to detect hurricane-induced damage utilizing NOAA’s Hurricane Harvey dataset. The ResNet50 model achieved 93.56% accuracy, while GoogleNet reached 90.65% on a custom dataset. The custom model demonstrated comparable performance, validating its effectiveness.
-                <br><br> Published a paper on these findings at the AIR 2022 conference, hosted by Motilal Nehru National Institute of Technology Allahabad. As the corresponding author, I led the submission, peer review, and publication processes.
-                This was part of my final year project.
-                <br>
-                Key features of the project include:
-                <br>
-                <div style="margin-left: 20px;">
-
-        
-                  •	Comparsion betweeen the 12 prebuilt models from Pytorch and the custom model.
-                <br>
-                  • Creating a customised dataset and finding comparable results wrt to the first dataset.
-                </div>
-
-              </p>
-              <P>
-                Tech Stack:
+              <ul class="work__bullets">
+                <li>Built CNN models in PyTorch on NOAA Hurricane Harvey data; ResNet50 reached 93.56% accuracy.</li>
+                <li>GoogleNet achieved 90.65% on a custom dataset; the custom model showed comparable performance.</li>
+                <li>Published at AIR 2022 (MNNIT Allahabad) and led submission, review, and publication as corresponding author.</li>
+                <li>Compared 12 PyTorch prebuilt models with a custom model and created a tailored dataset.</li>
+              </ul>
+              <p class="work__label">Tech Stack</p>
               <ul class="work__list">
                 <li>Python</li>
                 <li>Kaggle</li>
                 <li>PyTorch</li>
                 <li>Convolutional Neural Networks</li>
               </ul>
-            </P>
 
               <div class="work__links">
-                <p>
-                <a href="https://www.kaggle.com/code/ameymak/final-code" target="_blank" class="link__text">
-                  Visit Site (Kaggle)
+                <a href="https://www.kaggle.com/code/ameymak/final-code" class="work__icon-link" target="_blank" data-label="Visit site (Kaggle)">
+                  <img src="./images/kaggle.svg" class="work__code" alt="Kaggle">
                 </a>
-                <a href="https://www.kaggle.com/code/ameymak/final-code" title="View Source Code" target="_blank">
-                  <img src="./images/kaggle.svg" class="work__code" alt="GitHub">
+                <a href="https://link.springer.com/chapter/10.1007/978-3-031-23724-9_34" class="work__icon-link" target="_blank" data-label="Visit site (Springer)">
+                  <img src="./images/springer.svg" class="work__code" alt="Springer">
                 </a>
-              </p>
-                <p>
-                <a href="https://link.springer.com/chapter/10.1007/978-3-031-23724-9_34" target="_blank" class="link__text">
-                  Visit Site (Springer)
-                </a>
-                <a href="https://link.springer.com/chapter/10.1007/978-3-031-23724-9_34" title="View Publication" target="_blank">
-                  <img src="./images/springer.svg" class="work__code" alt="Kaggle">
-                </a>
-              </p>
               </div>
             </div>
             <div class="work__image-box">
@@ -248,34 +203,19 @@
           <div class="work__box">
             <div class="work__text">
               <h3> bc-command </h3>
-              <p>
-                Implemented the bc command in C. The bc command in Linux stands for “basic calculator” and is a powerful command-line utility that allows users to perform arbitrary-precision arithmetic operations. 
-                <br><br> The project was implemented using linked list and the stack data structure. It is a terminal based project. This was part of my Data Structures and Algorithms Course
-                <br>
-                Key features of the project include:
-                <br>
-                <div style="margin-left: 20px;">
-
-        
-                  •	Arithmetic Operations: Supports addition, subtraction, multiplication, division, and modulus operations.
-                <br>
-                  •	Advanced Functions: Includes functions like bitwise shift operations.
-                </div>
-
-              </p>
-              <p>
-              Tech Stack :
+              <ul class="work__bullets">
+                <li>Implemented the Linux bc command in C with arbitrary‑precision arithmetic.</li>
+                <li>Used linked lists and stack-based parsing in a terminal-first workflow.</li>
+                <li>Supported add/subtract/multiply/divide/modulus plus bitwise shift operations.</li>
+              </ul>
+              <p class="work__label">Tech Stack</p>
               <ul class="work__list">
                 <li>C</li>
                 <li>Object Oriented Programming</li>
               </ul>
-            </p>
 
               <div class="work__links">
-                <a href="https://github.com/amey-makarand/bc-calculator-C-language-" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/amey-makarand/bc-calculator-C-language-">
+                <a href="https://github.com/amey-makarand/bc-calculator-C-language-" class="work__icon-link" data-label="Visit site (GitHub)">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
@@ -288,32 +228,19 @@
           <div class="work__box">
             <div class="work__text">
               <h3>HTTP Server </h3>
-              <p>
-                Engineered a highly efficient and robust HTTP server using socket programming in Python, designed to handle high traffic with reliability. Integrated advanced functionalities such as sophisticated cookie management, comprehensive logging for both informational and error events, and ensured full compliance with HTTP standards by implementing a complete suite of methods, including GET, POST, HEAD, DELETE, and PUT. <br><br> This solution not only enhanced server-side processing but also improved overall system maintainability and debugging capabilities. This was part of my Computer Network project.
-                <br>
-                Key features of the project include:
-                <br>
-                <div style="margin-left: 20px;">
-
-        
-                  •	Implemented the various http methods, cookies
-                <br>
-                  •	Implemented logging
-                </div>
-              </p>
-              <p>
-              Tech Stack:
+              <ul class="work__bullets">
+                <li>Built a robust HTTP server in Python using socket programming for high‑traffic reliability.</li>
+                <li>Implemented full HTTP method support (GET, POST, HEAD, PUT, DELETE) and cookie handling.</li>
+                <li>Added structured logging for info/error events to improve maintainability and debugging.</li>
+              </ul>
+              <p class="work__label">Tech Stack</p>
               <ul class="work__list">
                 <li>Python</li>
                 <li>Socket Programming</li>
               </ul>
-            </p>
 
               <div class="work__links">
-                <a href="https://github.com/amey-makarand/CN-project" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/amey-makarand/CN-project">
+                <a href="https://github.com/amey-makarand/CN-project" class="work__icon-link" data-label="Visit site (GitHub)">
                   <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
@@ -350,6 +277,7 @@
     </section>
     <section class="sjsu-section">
       <div class="row">
+        <h2>Events</h2>
         <figure>
           <img src="./images/cos.png" alt="Description of image" class="header__image">
           <figcaption>Student Research Day 2025 at SJSU was a memorable experience: I had the opportunity to showcase my work on using LLMs to improve students’ coding skills. It was also inspiring to explore research across so many disciplines—events like this remind me why continuous learning matters.</figcaption>
