@@ -722,6 +722,45 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 1.6rem;
 }
 
+.work__timeline {
+    position: relative;
+    display: grid;
+    gap: 1.8rem;
+    margin-top: 0.4rem;
+    padding-left: 2.8rem;
+}
+
+.work__timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.7rem;
+    top: 0.6rem;
+    bottom: 0.8rem;
+    width: 2px;
+    background: linear-gradient(180deg, rgba(199, 127, 60, 0.7), rgba(15, 23, 42, 0.16));
+}
+
+.work__timeline-item {
+    position: relative;
+}
+
+.work__timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.7rem;
+    top: 0.2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid rgba(199, 127, 60, 0.72);
+    box-shadow: 0 0 0 5px rgba(199, 127, 60, 0.12);
+}
+
+.work__timeline-item .work__meta {
+    margin-top: 0;
+}
+
 .work__label {
     font-size: 1.4rem;
     text-transform: uppercase;
