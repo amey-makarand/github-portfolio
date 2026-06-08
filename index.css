@@ -1026,6 +1026,13 @@ body:not(.user-is-tabbing) a:focus {
     border: 1px solid rgba(15, 23, 42, 0.08);
 }
 
+.work__image--amazon {
+    display: block;
+    width: min(100%, 24rem);
+    margin: 0 auto;
+    object-fit: contain;
+}
+
 .quote-section {
     background: var(--surface-2);
     padding: 4rem 0 0;
