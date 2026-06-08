@@ -722,6 +722,10 @@ body:not(.user-is-tabbing) a:focus {
     margin-bottom: 1.6rem;
 }
 
+.work__meta--nowrap {
+    white-space: nowrap;
+}
+
 .work__timeline {
     display: grid;
     gap: 2.2rem;
